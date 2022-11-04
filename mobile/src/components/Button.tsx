@@ -1,12 +1,11 @@
-import React from "react";
-import { Button as ButtonNativeBase, Text, IButtonProps } from "native-base";
+import { Button as ButtonNativeBase, IButtonProps, Text } from "native-base";
 
 interface Props extends IButtonProps {
   title: string;
   type?: "PRIMARY" | "SECONDARY";
 }
 
-const Button = ({ title, type, ...rest }: Props) => {
+export function Button({ title, type = "PRIMARY", ...rest }: Props) {
   return (
     <ButtonNativeBase
       w="full"
@@ -32,6 +31,4 @@ const Button = ({ title, type, ...rest }: Props) => {
       </Text>
     </ButtonNativeBase>
   );
-};
-
-export default Button;
+}
