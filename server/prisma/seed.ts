@@ -40,7 +40,7 @@ async function main() {
       secondTeamCountyCode: "AR",
       guesses: {
         create: {
-          firstTeamPointes: 2,
+          firstTeamPoints: 2,
           secondTeamPoints: 1,
 
           participant: {
